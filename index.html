@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Media.css">
+</head>
+
+<body>
+  <!---Login form-->
+  <div class="loginwrapper" id="loginpage">
+    <img src="Images/Logo.png" class="icongra">
+    <h1 class="logincharge">YOUR <span style="background-color:#022135fc; padding: 5px;">COURSES</span><br><br> ARE WAITING ON THE INSIDE</h1>
+    <form class="logfrm" action="Mydashboard.html">
+      <label>Email
+      <input type="text">
+    </label>
+    <label>
+      Password
+      <input type="password">
+    </label>
+    
+    <button class="loginaactbtn">Let's go</button>
+
+  </form>
+  <p style="font-weight:bold;">Dont have an account? <span onclick="show()" style="color:white;">Signup</span></p>
+ 
+  </div>
+  <!---signupForm---->
+  <div class="FormWrapper" id="myform">
+    <div class="formModal">
+      
+    </div>
+    <div class="formbox">
+      
+     
+    <form class="signupForm" action="mydashboard.html">
+      
+      <img src="Images/cool.gif" id="coolgif">
+      <h3 class="Signcharge">You just took the big step</h3>
+      <label>
+        Firstname
+        <input type="text" name="Firstname">
+      
+      </label>
+      <label>
+        Middlename
+        <input type="text" name="Middlename">
+      </label>
+      <label>
+        Lastname
+        <input type="text" name="Lastname">
+      </label>
+      <label>
+        Email
+        <input type="text" name="email">
+      </label>
+      <label>
+        password
+        <input type="password">
+      </label>
+      <label>
+        Confirm password 
+        <input type="password">
+      </label>
+   <label>Date of birth</label>
+   <input type="date">
+   <label>Gender</label>
+   <select>
+     <option>Male</option>
+     <option>Female</option>
+     <option>Other</option>
+   </select>
+ <label>I want to learn?</label>
+ <select>
+   <option>Web design</option>Graphic design</option>
+   <option>Game development</option>
+   <option>
+     Mobile App development
+   </option>
+   <option>3d animation and vfx</option>
+   <option>Cyber security</option>
+ </select>
+ <label>Skill level</label>
+ <select>
+   <option>Beginner</option>
+   <option>intermediate</option>
+   <option>Professional</option>
+ </select>
+ <div class="actionbtn">
+<button class="loginbtn" onclick="return loginpage()">Already a member</button>
+ <button class="sign">Dive in</button>
+ </div>
+    </form>
+    
+  </div>
+  </div>
+  <section class="window">
+    <div class="loginfla" onclick="loginpage()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+        <path d="M7 12h14l-3 -3m0 6l3 -3" />
+      </svg>
+      
+      
+      
+      
+    </div>
+    <div class="navbar">
+   <img src="Images/Logo.png" id="logoimg">
+      <h3>NESTA<span id="learnlabel">LEARN</span></h3>
+      <div class="right">
+  <button class="signup btnlog" onclick="loginpage()">
+    Login
+  </button>
+  <button class="signup" onclick="show()">
+    Signup
+  </button>
+  </div>
+    </div>
+    <div class="back" id="backImg">
+    </div>
+
+    
+
+      <h5 style="color:white; font-size: 15px; text-align: center;">Categories</h5>
+   <div class="category">
+  <div class ="catwrapper"><button class="catbtn webcat" onclick="webpreview()">
+       
+  <img src="Svg/web.svg" class="caticon" >
+      </button>
+      <p>Web design</p>
+      </div>
+      <div class="catwrapper">
+      <button class="catbtn graphiccat">
+     <img src="Svg/booklet.svg" class="caticon">
+      </button>
+      <p>Graphic design</p>
+      </div>
+      <div class="catwrapper">
+    <button class="catbtn gamecat">
+   <img src="Svg/Gamer.svg" class="caticon">
+      </button>
+      <p>Game
+      Design</p>
+      </div>
+      
+    </div>
+ <div class="category">
+  <div class ="catwrapper"><button class="catbtn appcat" >
+      <img src="Svg/Appdev.svg" class="caticon">
+      </button>
+      <p>Mobile App development</p>
+      </div>
+      <div class="catwrapper">
+      <button class="catbtn animcat">
+     <img src="Svg/box.svg" class="caticon">
+      </button>
+      <p>3d animation and visual effect</p>
+      </div>
+      <div class="catwrapper">
+    <button class="catbtn vidcat">
+   <img src="Svg/encrypted.svg" class="caticon">
+      </button>
+      <p>Cyber Security and Ethical Hacking</p>
+      </div>
+      
+    </div>
+    
+    
+    <div class="precard">
+      <div class="cardthread">
+      <div class="cardtext">
+        <div class="cont">
+        <h1>WEB DESIGN AND DEVELOPMENT</h1>
+   <blockquote>Start coding in HTML CSS AND JAVASCRIPT
+   </blockquote>
+   <button class="cta">
+     Get started
+   </button>
+   <div class= "logos">
+     <img src="logos/html-1.svg" class="icon">
+     <img src="logos/css-3.svg" class="icon">
+     <img src="logos/javascript-1.svg" class="icon">
+     <img src="logos/react-2.svg" class="icon">
+   <img src="logos/django.svg" class="icon">
+   <img src="logos/bootstrap-icon.svg" class="icon">
+   </div>
+   </div>
+    <img src="Svg/wave5.svg" class="wave">
+    </div>
+    
+  <div class="cardtext graphic">
+    <div class="cont">
+        <h1>GRAPHIC DESIGN BEGINNER Courses</h1>
+   <blockquote>Start using sophisticated softwares to design quality graphic
+   </blockquote>
+   <button class="cta">
+     Get started
+   </button>
+   <div class= "logos">
+     <img src="Images/photoshop.png" class="icongra">
+     <img src="logos/coreldraw.jpg" class="icongra">
+     <img src="Images/illustrator.png" class="icongra">
+
+   </div>
+   </div>
+          <img src="Svg/wave4.svg" class="wave">
+    </div>
+    
+    
+    <div class="cardtext game">
+      <div class="cont">
+        <h1>GAME DEVELOPMENT</h1>
+   <blockquote>Start using sophisticated softwares to design quality graphic
+   </blockquote>
+   <button class="cta">
+     Get started
+   </button>
+   <div class= "logos">
+     <img src="logos/html-1.svg" class="icon">
+     <img src="logos/css-3.svg" class="icon">
+     <img src="logos/javascript-1.svg" class="icon">
+     <img src="logos/react-2.svg" class="icon">
+   <img src="logos/django.svg" class="icon">
+   <img src="logos/bootstrap-icon.svg" class="icon">
+   </div>
+    </div>
+        <img src="Svg/wave2.svg" class="wave">
+   </div>
+   
+      </div>
+
+    </div> 
+    
+  
+  <section class="about">
+    <img src="Svg/blob1.svg" id="blob">
+  <h2 class="learntext">LEARN IN A FUN AND PRACTICAL WAY</h2>
+  <ul class="spec">
+    <li>PERSONSALISED LEARNING CURVE</li>
+    <li>Do not miss out on Any Lesson</li>
+    <li>ONE TO ONE INTERACTION</li>
+    <li>PROJECT BASED LEARNING</li>
+    <li>EASY COURSE BREAKDOWN</li>
+    <li>Support from Tech friends like you</li>
+  <li>Learn Experience that you have never seen</li>
+  </ul>
+  </section>
+  <div class="wavy">
+<img src="Svg/wave3.svg">
+</div>
+  
+ 
+  <div class="testwrapper">
+  
+    <section class="testimonial">
+      <h2>TESTIMONIALS</h2>
+      <ul class="testlist">
+      <TESTIMONIES
+    <li class="testThread">
+      <div class="userdetails">
+         <div class="bio">
+      <img src="Images/User.png" class="profileimg">
+      <div>
+      <p id="namelabel">Michael David</p>
+      <p>Bariga, Lagos. Nigeria</p>
+      </div>
+      </div>
+      
+      <p>Time</p>
+      </div>
+ 
+      <blockquote>you like the way that i move 
+you like the way j dey do 
+you like way i do my things cos I do t care bout no bady</blockquote>
+    </li>
+    <li class="testThread">
+      <div class="userdetails">
+         <div class="bio">
+      <img src="Images/User.png" class="profileimg">
+      <div>
+      <p id="namelabel">Michael David</p>
+      <p>Bariga, Lagos. Nigeria</p>
+      </div>
+      </div>
+      <p>Time</p>
+      </div>
+ 
+      <blockquote>you like the way that i move 
+you like the way j dey do 
+you like way i do my things cos I do t care bout no bady</blockquote>
+    </li>
+    </ul>
+   </section>
+  </div>
+
+         <img src="Svg/wave.svg" class="wave">
+    
+     </div>
+    <section class="footer">
+      <div class="gateways">
+    <img src="Gateways/paypal.svg" class="gates">
+    <img src="Gateways/mastercard.svg" class="gates">
+    <img src="Gateways/visa.svg" class="visa">
+      </div>
+      Copyright © 2022 Nestalearn 
+      <h5>powered by</h5>
+      <div class="sponsors">
+     <img src="Logos/Imole.png" class="icongra">
+     <img src="Logos/Pen.png" class="icongra">
+     <img src="Logos/Pixel.png" class="icongra">
+      </div>
+ 
+    </section>
+<div class="prevs" id="prevs">
+
+  <div class="webdevcard" id="webcard">
+    <div class="webbox">
+    <h2 style="text-align: center; margin-top: 10px; color:black;" class="packtitle">
+      
+      WEB DEVELOPMENT
+    
+    </h2>
+    <div class="package">
+    <h4 class="packtext">BEGINNER</h4>
+      <div class="pricetag">
+        
+        ₦ 5,000/month
+      </div>
+      <img src="Images/Beginnerweb.jpeg" id="prevImg">
+     <button class="packcta">Enroll now</button>
+     
+    </div>
+    <div class="package intermediate">
+      <h4 class="packtext">INTERMEDIATE</h4>
+      <div class="pricetag">
+        
+        ₦ 10,000/month
+      </div>
+      <img src="Images/Beginnerweb.jpeg" id="prevImg">
+     <button class="packcta inter">Enroll now</button>
+     </div>
+     
+    <div class="package masterclass">
+      <h4 class="packtext">MASTERCLASS</h4>
+      <div class="pricetag">
+        
+        ₦ 20,000/month
+      </div>
+      <img src="Images/Beginnerweb.jpeg" id="prevImg">
+     <button class="packcta master">Enroll now</button>
+      </div>
+    </div>
+  </div>
+<section class="webdevprev" id="webmodal">
+</section>
+
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
